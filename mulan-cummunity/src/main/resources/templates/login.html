@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<form action="/login">
+		account:<input type="text" id="account" name="user_name"><br>
+		password:<input type="password" id="password" name="user_password"><br>
+	    <input type="submit" value="login" >
+	    <input type="button" value="reset" id="reset">
+	</form>
+	<script>
+		$("#reset").click(
+			function(){
+				alert("something")
+				$("#account").html("");
+				$("#paaword").html("");
+				
+				
+			}	
+		);
+	
+	</script>
+</body>
+</html>

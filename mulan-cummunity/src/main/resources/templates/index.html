@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<a href="/registerPage">register</a>
+	<a href="/loginPage">login</a>
+	<div th:if="${user}!=null">
+		用户名是<span th:text="${user.user_name}"></span>
+	</div>
+	<a href="question">发布问题</a>
+
+</body>
+</html>
